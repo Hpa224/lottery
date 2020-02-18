@@ -12,22 +12,17 @@ let generator = () => {
    for (let i = 1; i <= 9; i++) {
       numbers.push(number(1,10))
       }
-   console.log(numbers)
+   // console.log(numbers)
 
    div.prepend(`<p class=chosen>`)
    $(".chosen").text(numbers)
 
-   if (numbers.length === 8) {
+   if (numbers.length === 9) {
       numbers=[]
+      console.log(numbers)
       }
    }
+
    for (let i = 1; i <= 10; i++) {
          generator()
    }
-
-
-// for (let i = 0; i < 10; i++) {
-//    generator()
-   
-// }
-
